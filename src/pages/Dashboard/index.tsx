@@ -44,6 +44,7 @@ const Dashboard: React.FC = () => {
           formattedDate: Intl.DateTimeFormat('pt-BR').format(
             new Date(transaction.created_at),
           ),
+          category: JSON.parse(transaction.category.title),
         })),
       );
       setBalance({
